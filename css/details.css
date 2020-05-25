@@ -1,0 +1,80 @@
+/* CSS DETAILS STYLE SHEET:
+-------------------------------------- 
+
+COLOUR PALETTE:
+Brown - #8B3E46;
+Dark brown - #532227;
+Light brown - #FF9B6E;
+Light grey - #E9E9E9;
+Grey - #6A6A6A;
+
+--------------------------------------*/
+
+/* CONTAINER ----------------------- */
+.details-product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    margin: 4em;
+}
+
+
+/* IMAGE -------------------------- */
+.details-img{
+    max-width: 100%;
+    margin: 2em;
+    justify-self: center;
+}
+
+
+/* INFORMATION -------------------- */
+.product-info{
+    padding: 2em;
+}
+
+
+/* TITLE -------------------------- */
+.product-info h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+
+/* PRICE -------------------------- */
+.product-info h3{
+    font-size: 20px;
+    color: #8B3E46;
+    margin-bottom: 50px;
+}
+
+
+/* DROP DOWN MENU ------------------ */
+.dropdown{
+  margin: 15px 0px;
+}
+
+.dropdown-select{
+  width: 100px;
+  padding: 5px;
+  font-size: 16px;
+  margin-left: 5px;
+  background-color: #FFF;
+  border-color: #8B3E46;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* End of Drop Down Menu ----------- */
+
+
+
+/* DESCRIPTION --------------------- */
+.product-description h4{
+    font-size: 20x;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.product-description p{
+    font-size: 16px;
+    max-width: 500px;
+}
+/* End of Description -------------- */

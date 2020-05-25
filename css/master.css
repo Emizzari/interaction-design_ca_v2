@@ -1,0 +1,92 @@
+/* CSS MASTER STYLE SHEET:
+-------------------------------------- 
+
+COLOUR PALETTE:
+Brown (main) -    #8B3E46;
+Dark brown   -    #532227;
+Light brown  -    #FF9B6E;
+Light grey   -    #E9E9E9;
+Grey         -    #6A6A6A;
+
+--------------------------------------
+
+TYPOGRAPHY:
+Headline
+font-family: 'Raleway', sans-serif;
+
+Sub-headline
+font-family: 'Montserrat', sans-serif;
+
+Body 
+font-family: 'Montserrat', sans-serif;
+
+--------------------------------------*/
+/* Fonts: */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:500&display=swap');
+
+/* CSS */
+@import url('nav.css');
+@import url('footer.css');
+@import url('contact.css');
+@import url('home.css');
+@import url('shoes.css');
+@import url('details.css');
+@import url('cart.css');
+@import url('stores.css');
+@import url('about.css');
+
+/* GLOBAL CSS */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* FONT - WEIGHT ------------------- */
+.bold{
+    font-weight: bold;
+}
+
+.bolder{
+    font-weight: bolder;
+}
+/* End of Font - Weight ------------ */
+
+
+
+/* HEADER -------------------------- */
+.header{
+    text-align: center;
+    margin: 3em 0em;
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+}
+
+.header-title{
+  margin: 0;
+}
+/* End of Header ------------------- */
+
+
+
+/* BUTTON ---------------------------*/
+.btn{
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  background: #8B3E46;
+  color: #FFF;
+  border: 1px solid #8B3E46;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color:  #8B3E46;
+}
+/* End of Button ------------------- */

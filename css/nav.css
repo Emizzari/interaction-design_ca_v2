@@ -1,0 +1,188 @@
+/* CSS NAVIGATION STYLE SHEET:
+-------------------------------------- 
+
+COLOUR PALETTE:
+Brown (main) -    #8B3E46;
+Dark brown   -    #532227;
+Light brown  -    #FF9B6E;
+Light grey   -    #E9E9E9;
+Grey         -    #6A6A6A;
+
+--------------------------------------*/
+.nav-bar{
+  background-color: #8B3E46;
+  box-shadow: 0px 0px 30px #6A6A6A;
+
+}
+
+.navigation{
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+
+  text-align: right;
+   
+  
+  z-index: 1;
+  align-items: center;
+
+}
+
+.menu{
+  display: inline-block;
+  grid-column: 2/4;
+  text-align: center;
+}
+
+.menu a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#active{
+  color: #FF9B6E;
+
+}
+
+.menu a:hover{
+  color: #FF9B6E;
+  
+}
+
+.menu a:active{
+  color: #FF9B6E;
+}
+
+.logo img{
+  
+  display: block;
+}
+
+.hamburger-icon{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 60px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: #FFFFFF;
+}
+
+#toggle{
+  display: none;
+}
+
+
+
+.nav-icon {
+  color: #FFF;
+}
+
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+  float: right;
+  
+}
+
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #FF9B6E;
+  padding: 0 5px;
+  border-radius: 30%;
+  color: #FFF;
+}
+
+
+
+/* HAMBURGER MENU
+------------------------------------------------------*/
+@media only screen and (max-width: 908px){
+  .nav-label{
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu{
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .logo img{
+    height: 20px;
+    margin: 10px 0px;
+  }
+
+  .menu a{
+    display: block;
+    background: #8B3E46;
+    border-top: 1px solid #8B3E46;
+    margin: 0;
+    padding: 0;
+  }
+
+  #toggle:checked + .menu{
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+/* TABLET
+------------------------------------------------------*/
+@media only screen and (min-width: 909px) and (max-width: 1025px){
+  .menu a{
+    font-size: 18px;  
+    line-height: 70px;
+    margin: 26px;
+    padding: 0px 2px 2px 2px;
+  }
+
+  .navigation{
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .logo img{
+    height: 45px;
+    margin: 12.5px 0px;
+  }
+
+   .cart-btn{
+      margin: 20px;
+  }
+
+  .nav-icon{
+      font-size: 22px;
+  }
+}
+
+/* LAPTOP/DESKTOP
+------------------------------------------------------ */
+@media only screen and (min-width: 1026px){
+  .menu a{
+    font-size: 20px;
+    line-height: 80px;
+    margin: 0px 30px;
+    
+  }
+
+  .logo img{
+    height: 55px;
+    margin: 12.5px 0px;
+  }
+
+  .cart-btn{
+      margin: 22px;
+  }
+
+  .nav-icon{
+      font-size: 25px;
+  }
+}
