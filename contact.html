@@ -72,23 +72,74 @@
 
 
 <!-- CONTACT FORM ------------------------------------------------------>
-    <div class="contact-form">
-        <form action="">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-            
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
-         
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="What can we help you with?" style="height:200px"></textarea>
-            
-            <input onclick="contactFormAlert()" class="btn" type="submit" value="send">
-        </form>
-    </div>
+    <form action="" id="contactForm" class="form">
+        
+            <!-- Headline: -->
+            <h1 class="form__h1">CONTACT FORM</h1>
+        
+            <!-- First Name: -->
+            <section class="form__section form__section--firstName">
+                <h5 class="form__section__h5">First name:</h5>
+                <div class="form__section__block">
+                    <input class="form__section__block__input" placeholder="First name.." id="firstName" />
+                    <i id="firstNameErrorIcon" class="errorIcon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error" id="firstNameError"><span class="italic">- Please enter your first name</span></div>
+            </section>
+        
+            <!-- Last Name: -->
+            <section class="form__section form__section--lastName">
+                <h5 class="form__section__h5">Last Name:</h5>
+                <div class="form__section__block">
+                    <input class="form__section__block__input" placeholder="Last name.." id="lastName" />
+                    <i id="lastNameErrorIcon" class="errorIcon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error" id="lastNameError"><span class="italic">- Please enter your last name</span></div>
+            </section>
+        
+            <!-- Email: -->
+            <section class="form__section form__section--email">
+                <h5 class="form__section__h5">Email:</h5>
+                <div class="form__section__block">
+                    <input class="form__section__block__input" placeholder="Email.." id="email" />
+                    <i id="emailErrorIcon" class="errorIcon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error" id="emailError"><span class="italic">- Please enter a valid email address</span></div>
+            </section>
+        
+            <!-- Topic: -->
+            <section class="form__section form__section--topic">
+                <h5 class="form__section__h5">Topic:</h5>
+                <div class="form__section__block">
+                    <input class="form__section__block__input" placeholder="Topic.." id="topic" />
+                    <i id="topicErrorIcon" class="errorIcon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error" id="topicError"><span class="italic">- Please describe what the message is about</span></div>
+            </section>
+        
+            <!-- Message: -->
+            <section class="form__section form__section--message">
+                <h5 class="form__section__h5">Message:</h5>
+                <div class="form__section__block">
+                    <textarea class="form__section__block__textarea" placeholder="Ask us anything.." id="message"></textarea>
+                    <i id="messageErrorIcon" class="errorIconMessage fas fa-exclamation-circle"></i>
+                </div>
+                <div id="messageError" class="error"><span class="italic">- Please enter more than 6 letters</span></div>
+            </section>
+        
+            <!-- Submit Button -->
+            <section class="form__section form__section--btn">
+                <button class="btn btn--submit" type="submit">send</button>
+            </section>
+
+            <!-- Feedback: -->
+            <section class="form__section form_section--feedback" id="submitMessage">
+                <div>Thank you!</div>
+                <div>Your message has been successfully sent. We will contact you very soon!</div>
+            </section>
+        
+        
+    </form>
 <!-- End of Contact Form ----------------------------------------------->
 
 
@@ -155,6 +206,7 @@
 
 
 <!-- SCRIPTS HERE ------------------------------------------------------>
+    <script src="js/contact-form.js"></script>
     <script src="js/alert.js"></script>
 <!-- end of script ----------------------------------------------------->
 </body>

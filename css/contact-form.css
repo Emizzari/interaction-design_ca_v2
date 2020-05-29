@@ -1,0 +1,96 @@
+/* .error,
+.errorIcon,
+.errorIconMessage,
+.form_section--feedback,
+#firstNameErrorIcon,
+#lastNameErrorIcon,
+#emailErrorIcon,
+#topicErrorIcon,
+#messageErrorIcon{
+    display: none;
+} */
+
+.errorIcon,
+.errorIconMessage,
+.error{
+    color: rgb(192, 0, 0);
+}
+
+
+.italic{
+    font-style: italic;
+}
+
+.form{
+    display: grid;
+    grid-template-areas:
+        'headline headline'
+        'firstName lastName'
+        'email topic'
+        'message message'
+        'btn btn'
+        'feedback feedback'
+    ;
+}
+
+.form__h1{
+    grid-area: headline;
+    text-align: center;
+}
+
+.form__section--firstName{
+    grid-area: firstName;
+}
+
+.form__section--lastName{
+    grid-area: lastName;
+}
+
+.form__section--email{
+    grid-area: email;
+}
+
+.form__section--topic{
+    grid-area: topic;
+}
+
+.form__section--message{
+    grid-area: message;
+}
+
+.form__section--btn{
+    grid-area: btn;
+}
+
+.form__section--feedback{
+    grid-area: feedback;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.form__section--feedback div{
+    text-align: center;
+}
+
+.form__section__block{
+    position: relative;
+}
+
+/* Error: */
+.errorIcon{
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    -webkit-transform: translate(-5px,-50%);
+    transform: translate(-5px,-50%);
+}
+
+.errorIconMessage{
+    text-align: center;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
