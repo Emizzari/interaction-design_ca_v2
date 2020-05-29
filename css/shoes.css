@@ -48,23 +48,19 @@ Grey         -    #6A6A6A;
   cursor: pointer;
 }
 
-.bag-btn:hover {
-  color: #FFF;
-}
 
 .fa-shopping-cart {
   margin-right: 0.5rem;
 }
 
-.img-container:hover .bag-btn {
+/* .img-container:hover .bag-btn {
   transform: translateX(0);
-}
+} */
 
 .product-img {
   display: block;
   width: 100%;
   min-height: 12rem;
-  transition: all 0.3s linear;
 }
 
 .img-container:hover .product-img {
