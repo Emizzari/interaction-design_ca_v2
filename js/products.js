@@ -16,6 +16,9 @@ shoes.forEach(function (shoe) {
                             details
                         </button>
                     </div>
+                    <div class="article__block--icons">
+                        ${shoe.review}
+                    </div>
                     <h3>${shoe.name}</h3>
                     <h4>NOK ${shoe.price}</h4>
                 </article>

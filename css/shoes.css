@@ -63,8 +63,14 @@ Grey         -    #6A6A6A;
   min-height: 12rem;
 }
 
-.img-container:hover .product-img {
-  opacity: 0.5;
+.fa-star,
+.fa-star-half-alt{
+  color: rgb(247, 173, 14);
+}
+
+.article__block--icons{
+  text-align: center;
+  padding: 10px 0;
 }
 
 .product h3 {
