@@ -54,6 +54,7 @@ label, img, form{
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background: rgb(255, 246, 241);
 }
 
 h1, h2, h3, h4{
@@ -86,6 +87,10 @@ a{
 
 .bolder{
     font-weight: bolder;
+}
+
+.italic{
+    font-style: italic;
 }
 /* ------------------------------------------ */
 

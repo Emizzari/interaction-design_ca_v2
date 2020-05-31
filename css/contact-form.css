@@ -1,8 +1,6 @@
-
 /* Header: ---------------------------------- */
 .header--contact{
-    background: #FF9B6E;
-    background: url("../images/test1.jpg");
+    background: linear-gradient(150deg, #FF9B6E, rgb(180, 80, 90), #53224c);
     background-position: 0% 0%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +15,7 @@
 }
 /* ------------------------------------------ */
 
+
 /* main: ------------------------------------ */
 .main--contact{
     display: grid;
@@ -24,41 +23,26 @@
 /* ------------------------------------------ */
 
 
-
-/* Form: ------------------------------------ */
-/* .error,
-.form__section__block__icon,
-.errorIconMessage,
-.form_section--feedback,
-#firstNameErrorIcon,
-#lastNameErrorIcon,
-#emailErrorIcon,
-#topicErrorIcon,
-#messageErrorIcon{
-    display: none;
-} */
-
-
-.form__section__block__icon,
-.form__section__block__icon--message,
-.error{
-    color: rgb(192, 0, 0);
-}
-
-
-.italic{
-    font-style: italic;
-}
-
+/* FORM: ------------------------------------ */
 .form{
     display: grid;
+    /* background: #fff; */
+    box-sizing: border-box;
 }
+/* ------------------------------------------ */
 
-.form__h1{
+
+/* FORM: HEADLINE --------------------------- */
+.form__h2{
     grid-area: headline;
-    text-align: center;
+    text-align: start;
+    background-color: #FF9B6E;  
+    padding: 20px;
 }
+/* ------------------------------------------ */
 
+
+/* FORM: SECTION ---------------------------- */
 .form__section--firstName{
     grid-area: firstName;
 }
@@ -83,22 +67,65 @@
     grid-area: btn;
 }
 
-.form__section--feedback{
+.form_section--feedback{
     grid-area: feedback;
-    display: grid;
-    align-items: center;
-    justify-items: center;
+}
+/* ------------------------------------------ */
+
+
+/* FORM: H5 --------------------------------- */
+.form__section__h5{
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+/* ------------------------------------------ */
+
+
+/* FORM: INPUT ------------------------------ */
+.form__section__block__textarea,
+.form__section__block__input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    margin-bottom: 15px;
 }
 
-.form__section--feedback div{
-    text-align: center;
+.form__section__block__textarea{
+    height: 150px;
 }
 
-.form__section__block{
-    position: relative;
+.form__section__block__input{
+    height: 60px;
 }
 
-/* Error: */
+.form__section__block__textarea:focus,
+.form__section__block__input:focus{
+    outline: 2px solid #FF9B6E;
+}
+/* ------------------------------------------ */
+
+
+/* FORM: ERROR ------------------------------ */
+.error,
+.form__section__block__icon,
+.errorIconMessage,
+.form_section--feedback,
+#firstNameErrorIcon,
+#lastNameErrorIcon,
+#emailErrorIcon,
+#topicErrorIcon,
+#messageErrorIcon{
+    display: none;
+}
+
+.form__section__block__icon,
+.form__section__block__icon--message,
+.error{
+    color: rgb(192, 0, 0);
+}
+
 .form__section__block__icon{
     box-sizing: border-box;
     text-align: center;
@@ -114,6 +141,39 @@
     position: absolute;
     top: 18px;
     right: 10px;
+}
+/* ------------------------------------------ */
+
+
+/* FORM: BUTTON ----------------------------- */
+.form__section--btn{
+    text-align: center;
+}
+/* ------------------------------------------ */
+
+
+/* INFO: ------------------------------------ */
+.main__section__h3{
+    padding-top: 40px;
+    border-bottom: 2px solid #FF9B6E;
+}
+
+.main__section__p{
+    padding-top: 8px;
+}
+
+
+/* FORM: FEEDBACK MESSAGE ------------------- */
+.form_section--feedback{
+    text-align: center;
+    font-size: 18px;
+    border: 3px solid rgb(253, 154, 108);
+    background: rgb(255, 195, 167);
+    padding: 20px 10px;
+}
+
+.form_section--feedback p:nth-child(1){
+    padding-bottom: 20px;
 }
 /* ------------------------------------------ */
 
@@ -140,6 +200,7 @@
             'feedback'
         ;
         grid-gap: 20px;
+        grid-template-columns: 100%;
     }
 } 
 
@@ -162,6 +223,7 @@
             'feedback feedback'
         ;
         grid-gap: 30px;
+        grid-template-columns: 48% 48%;
     }
 }
 
@@ -177,14 +239,15 @@
 
     .form{
         grid-template-areas:
-            'headline headline'
-            'firstName lastName'
-            'email topic'
-            'message message'
-            'btn btn'
-            'feedback feedback'
+            'headline   headline'
+            'firstName  lastName'
+            'email      topic'
+            'message    message'
+            'btn        btn'
+            'feedback   feedback'
         ;
         grid-gap: 30px;
+        grid-template-columns: 48% 48%;
     }
 }
 
@@ -208,5 +271,6 @@
             'feedback feedback'
         ;
         grid-gap: 30px;
+        grid-template-columns: 48% 48%;
     }
 }
