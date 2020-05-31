@@ -10,24 +10,31 @@ Grey         -    #6A6A6A;
 
 -------------------------------------- */
 
-.about{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2em;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.stories{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 1em;
-}
 
 
 
 /* IMAGES ---------------------------- */
-.about-img{
+
+
+
+.main__section__block--how-img{
+    background: url("../images/how-we-make-them.jpg");
     width: 100%;
+    height: 600px;
+    background-position: 50% 20%;
+}
+
+.main__section__block--story-img{
+    background: url("../images//our-story.jpg");
+    width: 100%;
+    height: 600px;
+    background-position: 50% 20%;
+}
+
+.main__section__block--values-img{
+    background: url("../images/our-values.jpg");
+    width: 100%;
+    height: 600px;
+    background-position: 50% 20%;
 }

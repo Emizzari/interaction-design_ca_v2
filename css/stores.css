@@ -1,15 +1,62 @@
-/* CSS STORES STYLE SHEET:
--------------------------------------- 
+/* SECTION: --------------------------------- */
+.main__section__block--paris-img{
+    background: url("../images/paris.jpg");
+    width: 100%;
+    height: 600px;
+    background-position: 50% 20%;
+}
 
-COLOUR PALETTE:
-Brown (main) -    #8B3E46;
-Dark brown   -    #532227;
-Light brown  -    #FF9B6E;
-Light grey   -    #E9E9E9;
-Grey         -    #6A6A6A;
+.main__section__block--milan-img{
+    background: url("../images/milan.jpg");
+    width: 100%;
+    height: 600px;
+    background-position: 50% 20%;
+}
 
--------------------------------------- */
+.main__section__block--london-img{
+    background: url("../images/london.jpg");
+    width: 100%;
+    height: 600px;
+    background-position: 50% 20%;
+}
 
+.main__section__block--rome-img{
+    background: url("../images/rome.jpg");
+    width: 100%;
+    height: 600px;
+    background-position: 50% 20%;
+}
+
+.fade{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0),  #fff, #fff)
+}
+/* ------------------------------------------ */
+
+.main__section--stores{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.main__section__block__h2--stores{
+    padding-bottom: 10px;
+    letter-spacing: 20px;
+    border-bottom: 3px solid #FF9B6E;
+    margin-bottom: 10px;
+}
+
+.main__section__block__p--stores{
+    line-height: 35px;
+}
+
+.main__section__block--stores{
+    padding: 20px;
+    max-width: 650px;
+}
 
 
 /* CONTAINER ------------------------- */
@@ -35,3 +82,61 @@ Grey         -    #6A6A6A;
     width: 100%;
 }
 
+/* RESPONSIVE: ------------------------------ */
+/* Mobile: */
+@media screen and (max-width: 480px) {
+    .main__section--stores{
+        grid-template-columns: 1fr;
+    }
+
+    .fade{
+        display: none;
+    }
+
+    .main__section__block--paris-img{
+        background-position: 85% 0%;
+    }
+
+    .main__section__block--london-img{
+        background-position: 30% 0%;
+    }
+
+    .main__section__block--stores{
+        padding: 60px 10px;
+    }
+    
+} 
+
+/* Tablet: */
+@media screen and (min-width: 481px) and (max-width: 1025px){
+    .main__section--stores{
+        grid-template-columns: 1fr;
+    }
+
+    .fade{
+        display: none;
+    }
+
+    .main__section__block--paris-img{
+        background-position: 85% 0%;
+    }
+
+    .main__section__block--london-img{
+        background-position: 30% 0%;
+    }
+
+    .main__section__block--stores{
+        padding: 80px 10px;
+    }
+
+}
+
+/* Laptop: */
+@media screen and (min-width: 1026px) and (max-width: 1600px) {
+
+}
+
+/* Desktop: */
+@media screen and (min-width: 1601px){
+    
+}
