@@ -25,7 +25,7 @@ Grey - #6A6A6A;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-gap: 1em;
-    margin: 1em 1em 5em 1em;
+    margin: 100px 20px;
 }
 
 .cart-img{

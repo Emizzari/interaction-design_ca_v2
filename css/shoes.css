@@ -12,6 +12,12 @@ Grey         -    #6A6A6A;
 
 /* --------------- Products ---------------- */
 
+.products{
+  margin: 100px 20px;
+  padding: 50px 0;
+  border-top: 2px solid #8B3E46;
+  border-bottom: 2px solid #8B3E46;
+}
 
 .products a{
   color: black;
@@ -26,6 +32,22 @@ Grey         -    #6A6A6A;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
+}
+
+.product{
+  background: #FFF;
+  padding: 0 20px 20px 20px;
+}
+
+.gg{
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  /* transition: .3s ease-in-out; */
+  margin: 2px;
+}
+
+.gg:hover{
+  border: 2px solid #8B3E46;
+  margin: 0px;
 }
 
 .img-container {

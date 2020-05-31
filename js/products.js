@@ -7,15 +7,11 @@ shoes.forEach(function (shoe) {
 
     newHTML += `
             <!-- Single product -->
-            <a href="details.html?id=${shoe.id}">
+            <a class="gg" href="details.html?id=${shoe.id}">
+                                    <img class="product-img" src="${shoe.imageUrl}" alt="${shoe.name}">
+
                 <article class="product">
-                    <div class="img-container">
-                        <img class="product-img" src="${shoe.imageUrl}" alt="${shoe.name}">
-                        <button class="bag-btn" data-id="${shoe.id}">
-                            <i class="fas fa-shopping-bag"></i>
-                            details
-                        </button>
-                    </div>
+                    
                     <div class="article__block--icons">
                         ${shoe.review}
                     </div>
