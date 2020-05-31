@@ -58,20 +58,15 @@ body{
 
 
 
-/* HEADER -------------------------- */
+/* HEADER: ---------------------------------- */
 .header{
     text-align: center;
-    margin: 3em 0em;
+    padding: 3em 0em;
     text-transform: capitalize;
     font-size: 20px;
     letter-spacing: 0.1rem;
 }
-
-.header-title{
-  margin: 0;
-}
-/* End of Header ------------------- */
-
+/* ------------------------------------------ */
 
 
 /* BUTTON ---------------------------*/
@@ -91,4 +86,42 @@ body{
     background-color: transparent;
     color:  #8B3E46;
 }
-/* End of Button ------------------- */
+/* ------------------------------------------ */
+
+
+
+/* RESPONSIVE: ------------------------------ */
+/* Mobile: */
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 34px;
+        text-align: center;
+        padding: 10px;
+    }
+} 
+
+/* Tablet: */
+@media screen and (min-width: 481px) and (max-width: 1025px){
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+}
+
+/* Laptop: */
+@media screen and (min-width: 1026px) and (max-width: 1600px) {
+    h1{
+        font-size: 45px;
+        text-align: center;
+    }
+}
+
+/* Desktop: */
+@media screen and (min-width: 1601px){
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    
+}

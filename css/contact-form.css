@@ -1,3 +1,31 @@
+
+/* Header: ---------------------------------- */
+.header--contact{
+    background: #FF9B6E;
+    background: url("../images/test1.jpg");
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__h1{
+    margin: 0;
+    padding: 45px 0;
+    color: #fff;
+    /* background: rgba(255, 255, 255, 0.6); */
+    width: 100%;
+}
+/* ------------------------------------------ */
+
+/* main: ------------------------------------ */
+.main--contact{
+    display: grid;
+}
+/* ------------------------------------------ */
+
+
+
+/* Form: ------------------------------------ */
 /* .error,
 .errorIcon,
 .errorIconMessage,
