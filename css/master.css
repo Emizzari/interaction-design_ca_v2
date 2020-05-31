@@ -36,17 +36,50 @@ font-family: 'Montserrat', sans-serif;
 @import url('cart.css');
 @import url('stores.css');
 @import url('about.css');
+/* ------------------------------------------ */
 
-/* GLOBAL CSS */
-body{
+
+/* DEFAULT STYLES: -------------------------- */
+html, body,
+nav, footer, main, header,
+section, div, article,
+h1, h2, h3, h4, h5, h6,
+p, a, button, span, i, iframe, input,
+label, img, form{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body{
     font-family: 'Montserrat', sans-serif;
 }
 
+h1, h2, h3, h4{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);  
+}
+/* ------------------------------------------ */
 
 
-/* FONT - WEIGHT ------------------- */
+/* LINKS: ----------------------------------- */
+.link{
+    text-decoration: underline;
+    color: #FF9B6E;  
+}
+
+.link:hover{
+    text-decoration: none;
+}
+/* ------------------------------------------ */
+
+
+/* FONT STYLES: ----------------------------- */
 .bold{
     font-weight: bold;
 }
@@ -54,7 +87,7 @@ body{
 .bolder{
     font-weight: bolder;
 }
-/* End of Font - Weight ------------ */
+/* ------------------------------------------ */
 
 
 
@@ -69,7 +102,7 @@ body{
 /* ------------------------------------------ */
 
 
-/* BUTTON ---------------------------*/
+/* BUTTON ----------------------------------- */
 .btn{
   padding: 1rem 3rem;
   text-transform: uppercase;
