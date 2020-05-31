@@ -72,19 +72,21 @@
 
 
 <!-- CONTACT FORM ------------------------------------------------------>
-    <form action="" id="contactForm" class="form">
+    <main class="main main--contact">
+        <!-- Contact Form: -->
+        <form action="" id="contactForm" class="form">
         
             <!-- Headline: -->
-            <h1 class="form__h1">CONTACT FORM</h1>
+            <h2 class="form__h1">CONTACT FORM</h2>
         
             <!-- First Name: -->
             <section class="form__section form__section--firstName">
                 <h5 class="form__section__h5">First name:</h5>
                 <div class="form__section__block">
                     <input class="form__section__block__input" placeholder="First name.." id="firstName" />
-                    <i id="firstNameErrorIcon" class="errorIcon fas fa-exclamation-circle"></i>
+                    <i id="firstNameErrorIcon" class="form__section__block__icon fas fa-exclamation-circle"></i>
                 </div>
-                <div class="error" id="firstNameError"><span class="italic">- Please enter your first name</span></div>
+                <p class="error" id="firstNameError"><span class="italic">- Please enter your first name</span></p>
             </section>
         
             <!-- Last Name: -->
@@ -92,9 +94,9 @@
                 <h5 class="form__section__h5">Last Name:</h5>
                 <div class="form__section__block">
                     <input class="form__section__block__input" placeholder="Last name.." id="lastName" />
-                    <i id="lastNameErrorIcon" class="errorIcon fas fa-exclamation-circle"></i>
+                    <i id="lastNameErrorIcon" class="form__section__block__icon fas fa-exclamation-circle"></i>
                 </div>
-                <div class="error" id="lastNameError"><span class="italic">- Please enter your last name</span></div>
+                <p class="error" id="lastNameError"><span class="italic">- Please enter your last name</span></p>
             </section>
         
             <!-- Email: -->
@@ -102,9 +104,9 @@
                 <h5 class="form__section__h5">Email:</h5>
                 <div class="form__section__block">
                     <input class="form__section__block__input" placeholder="Email.." id="email" />
-                    <i id="emailErrorIcon" class="errorIcon fas fa-exclamation-circle"></i>
+                    <i id="emailErrorIcon" class="form__section__block__icon fas fa-exclamation-circle"></i>
                 </div>
-                <div class="error" id="emailError"><span class="italic">- Please enter a valid email address</span></div>
+                <p class="error" id="emailError"><span class="italic">- Please enter a valid email address</span></p>
             </section>
         
             <!-- Topic: -->
@@ -112,9 +114,9 @@
                 <h5 class="form__section__h5">Topic:</h5>
                 <div class="form__section__block">
                     <input class="form__section__block__input" placeholder="Topic.." id="topic" />
-                    <i id="topicErrorIcon" class="errorIcon fas fa-exclamation-circle"></i>
+                    <i id="topicErrorIcon" class="form__section__block__icon fas fa-exclamation-circle"></i>
                 </div>
-                <div class="error" id="topicError"><span class="italic">- Please describe what the message is about</span></div>
+                <p class="error" id="topicError"><span class="italic">- Please describe what the message is about</span></p>
             </section>
         
             <!-- Message: -->
@@ -122,24 +124,50 @@
                 <h5 class="form__section__h5">Message:</h5>
                 <div class="form__section__block">
                     <textarea class="form__section__block__textarea" placeholder="Ask us anything.." id="message"></textarea>
-                    <i id="messageErrorIcon" class="errorIconMessage fas fa-exclamation-circle"></i>
+                    <i id="messageErrorIcon" class="form__section__block__icon--message fas fa-exclamation-circle"></i>
                 </div>
-                <div id="messageError" class="error"><span class="italic">- Please enter more than 6 letters</span></div>
+                <p id="messageError" class="error"><span class="italic">- Please enter more than 6 letters</span></p>
             </section>
         
             <!-- Submit Button -->
             <section class="form__section form__section--btn">
                 <button class="btn btn--submit" type="submit">send</button>
             </section>
-
+        
             <!-- Feedback: -->
             <section class="form__section form_section--feedback" id="submitMessage">
-                <div>Thank you!</div>
-                <div>Your message has been successfully sent. We will contact you very soon!</div>
+                <p>Thank you!</p>
+                <p>Your message has been successfully sent. We will contact you very soon!</p>
             </section>
         
         
-    </form>
+        </form>
+
+        <!-- Contact Info: -->
+        <section class="main__section">
+            <h2>connect with us</h2>
+            <p>For support or any questions - Email us at <a class="link" href="mailto:example@hotmal.com">support@example.com</a></p>
+
+            <h3>store 1</h3>
+            <p><span class="bold">Phone:</span></p>
+            <p><span class="bold">Phone:</span></p>
+
+            <h3>store 2</h3>
+            <p><span class="bold">Phone:</span></p>
+            <p><span class="bold">Phone:</span></p>
+
+            <h3>store 3</h3>
+            <p><span class="bold">Phone:</span></p>
+            <p><span class="bold">Phone:</span></p>
+
+            <h3>store 4</h3>
+            <p><span class="bold">Phone:</span></p>
+            <p><span class="bold">Phone:</span></p>
+        </section>
+
+    </main>
+
+    
 <!-- End of Contact Form ----------------------------------------------->
 
 

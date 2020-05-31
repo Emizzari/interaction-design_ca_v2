@@ -27,7 +27,7 @@
 
 /* Form: ------------------------------------ */
 /* .error,
-.errorIcon,
+.form__section__block__icon,
 .errorIconMessage,
 .form_section--feedback,
 #firstNameErrorIcon,
@@ -38,8 +38,9 @@
     display: none;
 } */
 
-.errorIcon,
-.errorIconMessage,
+
+.form__section__block__icon,
+.form__section__block__icon--message,
 .error{
     color: rgb(192, 0, 0);
 }
@@ -51,14 +52,6 @@
 
 .form{
     display: grid;
-    grid-template-areas:
-        'headline headline'
-        'firstName lastName'
-        'email topic'
-        'message message'
-        'btn btn'
-        'feedback feedback'
-    ;
 }
 
 .form__h1{
@@ -106,7 +99,7 @@
 }
 
 /* Error: */
-.errorIcon{
+.form__section__block__icon{
     box-sizing: border-box;
     text-align: center;
     position: absolute;
@@ -116,9 +109,104 @@
     transform: translate(-5px,-50%);
 }
 
-.errorIconMessage{
+.form__section__block__icon--message{
     text-align: center;
     position: absolute;
     top: 18px;
     right: 10px;
+}
+/* ------------------------------------------ */
+
+
+/* RESPONSIVE: ------------------------------ */
+/* Mobile: */
+@media screen and (max-width: 650px) {
+    .main--contact{
+        grid-template-columns: 1fr;
+        grid-gap: 70px;
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+
+    .form{
+        grid-template-areas:
+            'headline'
+            'firstName'
+            'lastName'
+            'email'
+            'topic'
+            'message'
+            'btn'
+            'feedback'
+        ;
+        grid-gap: 20px;
+    }
+} 
+
+/* Tablet: */
+@media screen and (min-width: 651px) and (max-width: 1025px){
+    .main--contact{
+        grid-template-columns: 1fr;
+        grid-gap: 70px;
+        padding: 0 20px;
+        margin: 30px 0;
+    }
+
+    .form{
+        grid-template-areas:
+            'headline headline'
+            'firstName lastName'
+            'email topic'
+            'message message'
+            'btn btn'
+            'feedback feedback'
+        ;
+        grid-gap: 30px;
+    }
+}
+
+/* Laptop: */
+@media screen and (min-width: 1026px) and (max-width: 1600px) {
+    .main--contact{
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 50px;
+        padding: 0 30px;
+        margin: 40px auto;
+        max-width: 1300px;
+    }
+
+    .form{
+        grid-template-areas:
+            'headline headline'
+            'firstName lastName'
+            'email topic'
+            'message message'
+            'btn btn'
+            'feedback feedback'
+        ;
+        grid-gap: 30px;
+    }
+}
+
+/* Desktop: */
+@media screen and (min-width: 1601px){
+    .main--contact{
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 80px;
+        padding: 0 30px;
+        margin: 40px auto;
+        max-width: 1300px;
+    }
+
+    .form{
+        grid-template-areas:
+            'headline headline'
+            'firstName lastName'
+            'email topic'
+            'message message'
+            'btn btn'
+            'feedback feedback'
+        ;
+        grid-gap: 30px;
+    }
 }
