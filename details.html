@@ -23,43 +23,35 @@
 
 <body>
 <!-- NAVIGATION HERE --------------------------------------------------->
-    <nav class="nav-bar">
-        <div class="navigation">
+<nav class="nav">
+    <div class="nav__block">
 
-            <!-- logo -->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo/logo-tr.png" alt="Logo">
-                </a>
-            </div>
+        <!-- logo -->
+        <a class="nav__block__logo" href="index.html"><img src="images/logo/logo-tr.png" alt="Logo"></a>
 
-            <!-- hamburger icon-->
-            <div class="hamburger-icon">
-                <label class="nav-label" for="nav-toggle">
-                    <i class="fas fas-bars"></i>
-                </label>
-                <input type="checkbox" id="toggle" />
-            </div>
+        <!-- menu items -->
+        <ul class="nav__block__menu">
+            <a id="active" href="shoes.html">SHOES</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="stores.html">STORES</a>
+            <a href="about.html">ABOUT</a>
+        </ul>
 
-            <!-- menu items -->
-            <div class="menu">
-                <a id="active" href="shoes.html">SHOES</a>
-                <a href="contact.html">CONTACT</a>
-                <a href="stores.html">STORES</a>
-                <a href="about.html">ABOUT</a>
-            </div>
+        <!-- hamburger icon-->
+        <i class="nav__icons--mobile" onclick="mobileMenuToggle()">
+            <i class="fas fa-times"></i>
+            <i class="fas fa-bars"></i>
+        </i>
 
-            <!-- shopping cart button -->
-            <div class="cart-btn">
-                <span class="nav-icon">
-                    <i class="fas fa-shopping-bag"></i>
-                </span>
-                <div class="cart-items">0</div>
-            </div>
+        <!-- shopping cart button -->
+        <i class="nav__icons--shopping">
+            <i class="fas fa-shopping-bag"></i>
+            <div class="shopping-bag-items">0</div>
+        </i>
 
-        </div>
-    </nav>
-<!-- end of Navigation ------------------------------------------------->
+    </div>
+</nav>
+<!---------------------------------------------------------------------->
 
 
 
@@ -161,6 +153,8 @@
             </p>
         </div>
     </footer>
+
+    <script src="js/mobile-menu.js"></script>
 <!-- End of Footer ----------------------------------------------------->
 </body>
 
