@@ -47,7 +47,7 @@ const shoes = [
     {
       "name": "Calm and Casual",
       "description": "The calm and casual shoe is perfect for someone who prioritizes both comfort and style. The shoe is light to wear and perfect for relaxing with friends.",
-      "imageUrl": "https://images.unsplash.com/photo-1548430395-ec39eaf2aa1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1374&q=80",
+      "imageUrl": "https://images.unsplash.com/photo-1576792741377-eb0f4f6d1a47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
       "id": 4,
       "price": 899,
       "review": `
