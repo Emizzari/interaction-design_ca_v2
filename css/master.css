@@ -52,9 +52,11 @@ label, img, form{
     position: relative;
 }
 
-body{
+html, body{
     font-family: 'Montserrat', sans-serif;
     background: rgb(255, 246, 241);
+    height: 100%;
+    width: 100%;
 }
 
 h1, h2, h3, h4{
