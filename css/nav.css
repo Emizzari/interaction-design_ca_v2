@@ -118,6 +118,9 @@ Grey         -    #6A6A6A;
 
 /* MOBILE: ----------------------------------- */
 @media only screen and (max-width: 908px){
+  .nav__block__logo img{
+    width: 180px;
+  }
 
   .nav{
     position: fixed;
@@ -126,7 +129,7 @@ Grey         -    #6A6A6A;
   }
 
   .nav__block{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .nav__icons--shopping{
