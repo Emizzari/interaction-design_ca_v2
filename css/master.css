@@ -21,21 +21,22 @@ Body
 font-family: 'Montserrat', sans-serif;
 
 --------------------------------------*/
-/* Fonts: */
+/* FONTS IMPORT: ---------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:500&display=swap');
+/* ------------------------------------------ */
 
-/* CSS */
-@import url('contact-form.css');
 
-@import url('nav.css');
-@import url('footer.css');
-@import url('contact.css');
-@import url('home.css');
-@import url('shoes.css');
-@import url('details.css');
-@import url('cart.css');
-@import url('stores.css');
+/* CSS IMPORT: ------------------------------ */
 @import url('about.css');
+@import url('stores.css');
+@import url('contact-form.css');
+@import url('cart.css');
+@import url('details.css');
+@import url('shoes.css');
+@import url('home.css');
+
+@import url('footer.css');
+@import url('nav.css');
 /* ------------------------------------------ */
 
 
@@ -162,6 +163,5 @@ a{
     h1{
         font-size: 50px;
         text-align: center;
-    }
-    
+    }  
 }
