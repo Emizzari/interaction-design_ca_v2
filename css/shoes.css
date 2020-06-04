@@ -16,7 +16,6 @@ Grey         -    #6A6A6A;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 }
 
 .header__h1--shoes{
@@ -35,8 +34,9 @@ Grey         -    #6A6A6A;
 /* --------------- Products ---------------- */
 
 .products{
-  margin: 100px 20px;
-  padding: 50px 0;
+  display: grid;
+  justify-content: center;
+  margin: 100px 10px;
 }
 
 .products a{
@@ -47,7 +47,7 @@ Grey         -    #6A6A6A;
 .products-center {
   width: 90vw;
   margin: 0;
-  max-width: 1170px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 1.5rem;
@@ -119,3 +119,25 @@ Grey         -    #6A6A6A;
 }
 
 /* ---------------End of Products ---------------- */
+/* RESPONSIVE: ------------------------------ */
+/* Mobile: */
+@media screen and (max-width: 480px) {
+  .header--shoes{
+    height: 100%;
+  }
+} 
+
+/* Tablet: */
+@media screen and (min-width: 481px) and (max-width: 1025px){
+
+}
+
+/* Laptop: */
+@media screen and (min-width: 1026px) and (max-width: 1600px) {
+
+}
+
+/* Desktop: */
+@media screen and (min-width: 1601px){
+
+}
