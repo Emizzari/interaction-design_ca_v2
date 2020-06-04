@@ -73,5 +73,110 @@ const shoes = [
         <i class="fas fa-star"></i>
         (543)
       `
-    }
+    },
+    {
+    "name": "Product 6",
+    "description": "This boot with its characteristic hard-worn look has a real industrial feel and offers the wearer a stylish and down-to-earth look.",
+    "imageUrl": "images/shoe-1.png",
+    "id": 6,
+    "price": 1234,
+    "review": `
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        (0)
+      `
+    },
+    {
+      "name": "Product 7",
+      "description": "This boot with its characteristic hard-worn look has a real industrial feel and offers the wearer a stylish and down-to-earth look.",
+      "imageUrl": "images/shoe-1.png",
+      "id": 7,
+      "price": 1234,
+      "review": `
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          (0)
+        `
+    },
+    {
+      "name": "Product 8",
+      "description": "This boot with its characteristic hard-worn look has a real industrial feel and offers the wearer a stylish and down-to-earth look.",
+      "imageUrl": "images/shoe-1.png",
+      "id": 8,
+      "price": 1234,
+      "review": `
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          (0)
+        `
+    },
+    {
+      "name": "Product 9",
+      "description": "This boot with its characteristic hard-worn look has a real industrial feel and offers the wearer a stylish and down-to-earth look.",
+      "imageUrl": "images/shoe-1.png",
+      "id": 9,
+      "price": 1234,
+      "review": `
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          (0)
+        `
+    },
+    {
+      "name": "Product 10",
+      "description": "This boot with its characteristic hard-worn look has a real industrial feel and offers the wearer a stylish and down-to-earth look.",
+      "imageUrl": "images/shoe-1.png",
+      "id": 10,
+      "price": 1234,
+      "review": `
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          (0)
+        `
+    },
+    {
+      "name": "Product 11",
+      "description": "This boot with its characteristic hard-worn look has a real industrial feel and offers the wearer a stylish and down-to-earth look.",
+      "imageUrl": "images/shoe-1.png",
+      "id": 11,
+      "price": 1234,
+      "review": `
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          (0)
+        `
+    },
+    {
+      "name": "Product 12",
+      "description": "This boot with its characteristic hard-worn look has a real industrial feel and offers the wearer a stylish and down-to-earth look.",
+      "imageUrl": "images/shoe-1.png",
+      "id": 12,
+      "price": 1234,
+      "review": `
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          (0)
+        `
+    },
   ]

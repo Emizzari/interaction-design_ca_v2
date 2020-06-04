@@ -1,29 +1,10 @@
-/* CSS MASTER STYLE SHEET:
--------------------------------------- 
-
-COLOUR PALETTE:
+/* COLOUR PALETTE:
 Brown (main) -    #8B3E46;
 Dark brown   -    #532227;
 Light brown  -    #FF9B6E;
 Light grey   -    #E9E9E9;
 Grey         -    #6A6A6A;
-
---------------------------------------
-
-TYPOGRAPHY:
-Headline
-font-family: 'Raleway', sans-serif;
-
-Sub-headline
-font-family: 'Montserrat', sans-serif;
-
-Body 
-font-family: 'Montserrat', sans-serif;
-
---------------------------------------*/
-/* FONTS IMPORT: ---------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:500&display=swap');
-/* ------------------------------------------ */
+--------------------------------------------- */
 
 
 /* CSS IMPORT: ------------------------------ */
@@ -34,9 +15,13 @@ font-family: 'Montserrat', sans-serif;
 @import url('details.css');
 @import url('shoes.css');
 @import url('home.css');
-
 @import url('footer.css');
 @import url('nav.css');
+/* ------------------------------------------ */
+
+
+/* FONTS IMPORT: ---------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:500&display=swap');
 /* ------------------------------------------ */
 
 
@@ -66,7 +51,8 @@ h1, h2, h3, h4{
 
 a{
     text-decoration: none;
-    color: rgb(0, 0, 0);  
+    color: rgb(0, 0, 0);
+    cursor: pointer;  
 }
 /* ------------------------------------------ */
 
